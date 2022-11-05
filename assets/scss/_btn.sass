@@ -1,0 +1,33 @@
+.btn
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    width: auto
+    border-radius: 10px
+    +ft(18, 18, 500)
+    padding: 23px 30px
+    &--white
+        background-color: $white
+        background-image: linear-gradient(#fff, #DEDEDE)
+        box-shadow: 0 0 49px 0 rgba(#2A07FE, 40%)
+        +ft(20, 20, 600)
+        padding: 18px 39px
+    &--bg
+        color: $white
+        background: linear-gradient(#3E6FF9, #3E53F8)
+        box-shadow: 0 0 49px 0 rgba(#2A07FE, 40%)
+        svg
+            background-color: $white
+            border-radius: 50%
+            padding: 5px
+        &:hover, &:focus, &:active
+            color: $white
+            outline: none
+            box-shadow: none
+            border-color: transaprent
+            appearance: none
+    &--text
+        padding: 0
+        color: #7B93FF
+

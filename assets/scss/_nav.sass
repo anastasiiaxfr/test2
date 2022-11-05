@@ -1,0 +1,25 @@
+.navbar
+	&__container
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+	&-toggler
+		padding: 0
+	+maw($sm)
+		&-collapse
+			text-align: center
+			margin-top: 50px
+			margin-bottom: 50px
+		&__btn-group
+			margin-top: 20px
+
+.nav
+	&-link
+		color: inherit
+		+ft(18, 18, 500)
+		margin-right: 37px
+		+maw($sm)
+			margin-right: 0
+			margin-left: 0

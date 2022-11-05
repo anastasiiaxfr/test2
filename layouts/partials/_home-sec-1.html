@@ -1,0 +1,9 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.section_1 }}
+{{ with $data.homepage.section_1 }}
+
+
+
+{{ end }}
+{{ end }}

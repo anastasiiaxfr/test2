@@ -1,0 +1,162 @@
+body
+    +theme(dark)
+    overflow-x: hidden
+    position: relative
+
+
+
+.section
+    padding-top: 100px
+    padding-bottom: 100px
+    overflow-x: hidden
+    &_1
+        
+        background: linear-gradient(#000, transparent, #000), url('../images/bg1.svg') no-repeat 50%/cover
+    +maw($sm)
+        &_2, &_3, &-4
+            padding-top: 0
+    +maw($md)
+        &_3
+            padding-top: 0
+            padding-bottom: 0
+        &_2
+            padding-top: 0
+
+.hero
+    &__title
+        +ft(96, 96, 600)
+        margin-top: 32px
+        margin-bottom: 32px
+        text-transform: capitalize
+        b
+            display: block
+            font-weight: 600
+            background: -webkit-linear-gradient(360deg, #487FFF, #73B5FF, #CB76FF)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+
+    &__subtitle
+        +ft(19, 19, 500)
+        color: #aaa
+        text-transform: uppercase
+        margin: 0
+
+    &__desc
+        +ft(25, 25*1.4, 500)
+        margin: 0
+        text-transform: none
+        color: inherit
+
+    +maw($sm)
+        text-align: center
+        &__title
+            +ft(52, 52, 600)
+        &__desc
+            +ft(18, 18*1.4, 600)
+        &__subtitle
+            +ft(14, 14, 500)
+    +maw($md)
+        &__order
+            order: 1
+            margin-top: 50px
+            transform: translateX(25%)
+
+
+    
+.table
+    margin-left: -17px
+    
+    td
+        border: none
+
+.card
+    margin-top: 15px
+    margin-bottom: 15px
+    padding: 30px
+    height: 100%
+    color: $white
+    border-radius: 46px
+    background-color: rgba(47,47,45, 0.2)
+    background: rgba(47,47,45, 0.2) radial-gradient(circle at bottom right,rgba(255,255,255,0.1), transparent 50%)
+    background-repeat: no-repeat
+    border: 3px solid rgba(255,255,255, 0.05)
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &--bg
+        &-1
+            background-image: url('../images/bg3.svg'), radial-gradient(circle at bottom right,rgba(255,255,255,0.1), transparent 50%)
+            background-size: 200% auto, 100%
+            background-position: top center, center
+
+            justify-content: flex-end
+        &-2
+            background-image: url('../images/bg4.svg'), radial-gradient(circle at bottom right,rgba(255,255,255,0.1), transparent 50%)
+            background-position: 100% 0%
+    +maw($sm)
+        &--bg
+            &-1
+                height: 476px
+                justify-content: flex-start
+                background-position: 100% 150%
+                background-size: 100%
+
+            &-2
+                height: 426px
+                background-position: 100% 100%
+                justify-content: flex-start
+
+    &__subtitle
+        +ft(16, 16, 500)
+        color: #aaa
+        text-transform: uppercase
+        margin-bottom: 66px
+    &__title
+        +ft(30, 43, 400)
+        margin-bottom: 61px
+        span
+            color: inherit
+            font-weight: 500
+    &__btn
+        +ft(15, 15, 400)
+        color: #aaa
+
+.bg
+    position: absolute
+    left: auto
+    right: 0
+    bottom: 0
+    top: 0
+    margin: auto
+    width: 100%
+    &--0
+        top: 25%
+        transform: translateX(10%)
+    &--0, &--1, &--2, &--3, &--4
+        position: absolute
+    &--1
+        background: radial-gradient(rgba(42, 7, 254, 0.16),transparent 50%)
+        width: 100%
+        height: 50%
+        top: 20%
+        left: -30%
+    &--2
+        background: radial-gradient(rgba(42, 7, 254, 0.16),transparent 50%)
+        width: 100%
+        height: 50%
+        top: 0%
+        right: -40%
+    &--4
+        background: radial-gradient(rgba(255, 255, 255, 0.1),transparent 50%)
+        width: 100vmax
+        height: 100vmax
+        top: auto
+        bottom: 0
+        right: 0
+    +maw($md)
+        display: none
+
+.img
+    display: block
+    max-width: 100%

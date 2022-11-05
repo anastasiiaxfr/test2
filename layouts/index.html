@@ -1,0 +1,196 @@
+{{ define "main" }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.homepage }}
+<style></style>
+{{ end }} {{ "<!-- Hero Section -->" | safeHTML }} 
+{{ "<!-- End of Hero Section -->"| safeHTML }}
+{{"<!-- banner-feature -->" | safeHTML}} 
+{{ if $data.homepage.section.enable }}
+{{ with $data.homepage }} 
+{{ .title }} 
+{{ end }} 
+{{ end }}
+
+<section class="section bg">
+<img src="images/bg2.svg" alt="ALT" class="bg--0">
+<div class="bg--1"></div>
+<div class="bg--2"></div>
+<div class="bg--4"></div> 
+</section>
+
+<!-- BEGIN section -->
+  <section class="section section_1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 hero">
+          <h2 class="hero__subtitle">
+            crypto trading
+          </h2>
+          <h1 class="hero__title">Engineers Meet <b>Traders __</b></h1>
+          <h3 class="hero__desc">
+            Advanced crypto algorithmic trading and efficient cross-chain
+            execution, at scale.
+          </h3>
+        </div>
+        <div class="col-lg-5 hero__order">
+          <img class="img img--1" src="images/diagram1.svg" alt="ALT" />
+        </div>
+
+        <div class="col-lg-12 mt-5">
+          <div class="row justify-content-center">
+            <a href="#" class="btn btn--bg"
+            >Learn More
+            <svg class="icon ms-3" width="20" height="20">
+              <use xlink:href="#i-2"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="conteiner d-none d-lg-block">
+    <div class="row justify-content-center my-5">
+      <svg class="icon" width="20" height="20">
+        <use xlink:href="#i-3"></use>
+      </svg>
+    </div>
+  </section>
+<!-- END section -->
+
+<!-- BEGIN section -->
+<section class="section section_2">
+  <div class="container">
+    <div class="row justify-content-between">
+      <hgroup class="text-center mb-5">
+        <h3>
+          about us
+        </h3>
+        <h2>
+          Global technologies
+        </h2>
+      </hgroup>
+
+      <div class="col-lg-6">
+        <img class="img" src="images/diagram2.svg" alt="ALT" />
+      </div>
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <h4>
+          Level 1
+        </h4>
+        <table class="table my-5">
+          <tr>
+            <td>
+              <svg class="icon" width="50" height="50">
+                <use xlink:href="#i-4"></use>
+              </svg>
+            </td>
+            <td>
+              Deploy a multi-legged futures strategy by simultaneously placing
+              orders to buy and sell from the same order ticket.
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>
+              <svg class="icon" width="50" height="50">
+                <use xlink:href="#i-5"></use>
+              </svg>
+            </td>
+            <td>
+              Place and manage orders based on the Level 2 order book, which
+              provides a live display of all bids and offers waiting to be
+              executed.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="btn btn--bg">Start Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END section -->
+
+<!-- BEGIN section -->
+<section class="section section_3">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 d-none d-md-block">
+        <img class="img" src="images/diagram3.png" alt="ALT" />
+      </div>
+      <div class="col-lg-4">
+        <h2>
+          The future <span>of</span><br> Crypto currency trading
+          <b>platform</b>
+        </h2>
+        <p class="my-4">
+          Take advantage of time and sales, futures spread orders and depth
+          trader — plus, trade directly from charts.
+        </p>
+        <a href="#" class="btn btn--text">Learn more</a>
+      </div>
+      <div class="col-lg-8 d-block d-md-none mt-4">
+        <img class="img mx-auto" src="images/diagram4.svg" alt="ALT" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END section -->
+
+<!-- BEGIN section -->
+<section class="section section_4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <figure class="card card--bg-1">
+          <h3 class="card__subtitle">
+            Spot & Margin
+          </h3>
+          <h2 class="card__title">
+            Trade <b>200+</b><br>
+            pairs with up <br>
+            to 10x leverage
+          </h2>
+
+          <a href="#" class="card__btn">Learn more</a>
+        </figure>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <h3 class="card__subtitle">Derivatives
+            </h3>
+              <h2 class="card__title"><span>40+</span> quarterly <br> futures and <br> contracts </h2>
+              <a href="#" class="card__btn">Learn more</a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <h3 class="card__subtitle">Trading Arena</h3>
+              <h2 class="card__title">Prize pools <br> worth up to <br><span>USD 1,000,000</span> </h2>
+              <a href="#" class="card__btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card card--bg-2">
+              <h3 class="card__subtitle">mobile app</h3>
+              <h2 class="card__title">Trade anytime, <br><span>anywhere</span></h2>
+              <a href="#" class="card__btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END section -->
+
+{{ end }}

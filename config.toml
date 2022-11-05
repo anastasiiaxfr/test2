@@ -1,0 +1,79 @@
+baseURL = "/"
+canonifyURLs = true
+defaultContentLanguage = "ua"
+disableLanguages = []
+languageCode = "ua"
+paginate = "6"
+relativeURLs = true
+summaryLength = "50"
+title = "Главная"
+# [Languages.en]
+# contentDir = "content/en"
+# home = "Home"
+# languageCode = "en-us"
+# languageName = "En"
+# weight = 3
+[Languages.ru]
+contentDir = "content/ru"
+home = "Главная"
+languageCode = "ru"
+languageName = "Ру"
+weight = 2
+[Languages.ua]
+contentDir = "content/ua"
+home = "Головна"
+languageCode = "ua"
+languageName = "Укр"
+weight = 1
+
+[[menu.header]]
+URL = "/activities/"
+name = "Activities"
+weight = 1
+[[menu.header]]
+URL = "/technology/"
+name = "Technology"
+weight = 2
+[[menu.header]]
+URL = "/r&d/"
+name = "R&D"
+weight = 3
+[[menu.header]]
+URL = "/community/"
+name = "Community"
+weight = 4
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+[params]
+CIO_site_id = "XXX"
+GTM = "GTM-WHBQ3BV"
+description = ""
+develop = "xfr"
+home = "Home"
+logo = "/images/logo.svg"
+logo_w = "20"
+site_name = ""
+site_url = ""
+
+[[params.plugins.css]]
+link = "plugins/js/animate.min.css"
+[[params.plugins.js]]
+link = "plugins/js/wow.min.js"
+[[params.plugins.js]]
+link = "plugins/js/bootstrap.bundle.min.js"
+[[params.plugins.js]]
+link = "plugins/js/jquery.min.js"
+
+[params.preloader]
+enable = true
+preloader = ""
+[sitemap]
+ChangeFreq = "daily"
+Priority = 0.6
+Weight = [["main", "1"], ["sub2", "0.8"], ["sub3", "0.6"]]
+enableRobotsTXT = true
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"

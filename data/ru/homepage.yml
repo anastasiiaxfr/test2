@@ -1,0 +1,48 @@
+# hero #
+hero:
+  enable: true
+  subtitle: crypto trading
+  title: "Engineers Meet **Traders**"
+  desc: Advanced crypto algorithmic trading and efficient cross-chain execution, at scale.
+ 
+  bg_img: "/images/diagram1.svg"
+
+  btn:
+    enable: true
+    label: "Learn More"
+    link: "#"
+
+# section 1 #
+section_1: 
+  enable: true
+  title: "about us"
+  subtitle: "Global technologies"
+ 
+  levels: Level 1
+  list:
+    - title: "Deploy a multi-legged futures strategy by simultaneously placing orders to buy and sell from the same order ticket."
+      icon: "/images/icons/i-5.svg"
+
+    - title: "Place and manage orders based on the Level 2 order book, which provides a live display of all bids and offers waiting to be executed."
+      icon: "/images/icons/i-6.svg" 
+
+  btn:
+    enable: true
+    label: "Start Now"
+    link: "#"
+
+
+
+
+
+# section 2 #
+section_2: 
+  enable: true
+  title: "The future Cryptocurrency trading "
+  subtitle: "Take advantage of time and sales, futures spread orders and depth trader — plus, trade directly from charts."
+  btn:
+    enable: true
+    label: "Learn more"
+    link: "#"
+
+
